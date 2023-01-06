@@ -1,0 +1,23 @@
+name: ${project.name}
+main: com.poixson.permissions.PermissionsPlugin
+version: ${project.version}
+api-version: ${spigot-short-version}
+load: STARTUP
+depend: [ pxnCommonBukkit ]
+authors: [ lorenzop ]
+website: ${project.url}
+description: ${project.description}
+commands:
+    perms:
+        description: "Commands to administrate server permissions"
+        usage: "Usage: /perms <cmd>"
+permission-message: "You don't have permission to use this command."
+permissions:
+    perms.*:
+        default: op
+        description: Gives access to all backrooms commands
+        children:
+            perms.reload: true
+    perms.reload:
+        default: op
+        description: Reload permissions from files
