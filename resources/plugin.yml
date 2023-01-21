@@ -2,7 +2,7 @@ name: ${project.name}
 main: com.poixson.permissions.PermissionsPlugin
 version: ${project.version}
 api-version: ${spigot-short-version}
-load: STARTUP
+load: POSTWORLD
 depend: [ pxnCommonPluginMC ]
 authors: [ lorenzop ]
 website: ${project.url}
