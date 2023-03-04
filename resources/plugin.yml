@@ -3,7 +3,10 @@ main: com.poixson.permissions.PermissionsPlugin
 version: ${project.version}
 api-version: ${spigot-short-version}
 load: POSTWORLD
-depend: [ pxnCommonPluginMC ]
+depend:
+  - pxnCommonPluginMC
+softdepend:
+  - Multiverse-Core
 authors: [ lorenzop ]
 website: ${project.url}
 description: ${project.description}
